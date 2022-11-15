@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+*{
+    box-sizing: border-box;
+    outline:none;
+}
+
+body{
+    background-color: #bde0fe;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+.add{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #8093f1;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 1.0s;
+}
+
+.add:hover{
+    background-color: rgba(133,26,232);
+    letter-spacing: 2px;
+}
+
+.add:active{
+    transform: scale(0.98);
+}
+
+.note{
+    background-color: #fff;
+    box-shadow:  0 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin:30px 20px;
+    height: 400px;
+    width: 400px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgba(133,26,232);
+    background: linear-gradient(180deg,rgba(42,0,255,1)15%,rgba(133,26,232)84%);
+}
+.note .tools{
+    background-color: rgba(133,26,232);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+
+.note .tools button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: 0.5s;
+}
+
+.note .tools button:hover{
+    transform: scale(1.5);
+}
+
+
+.note textarea{
+    word-wrap: break-word;
+    outline:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: none;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.main{
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+.hidden{
+    display: none;
+}
